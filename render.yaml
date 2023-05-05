@@ -3,6 +3,7 @@ services:
   name: retool
   env: docker
   plan: standard
+  region: singapore
   healthCheckPath: /api/checkHealth
   autoDeploy: false
   envVars:
@@ -43,3 +44,4 @@ databases:
 - name: retool
   databaseName: retooldb
   user: retool_user
+  region: singapore
